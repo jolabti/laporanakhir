@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOGIN...</title>
+	
+	<link rel="stylesheet" type="text/css" href="bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="bootstrap-theme.css" />
+	
+
+</head>
+
+<script type="text/javascript">
+
+
+  function verifikasi() {
+		 
+		 var a= document.getElementById('username');
+		 var b= document.getElementById('password');
+		 
+		 if (a.value==1 && b.value==1)
+		 {
+				alert("AUTHENTICATED");
+				location.replace("success.html")
+		 
+		 }
+		 else{
+		 
+				alert('GAGAL');
+		 
+		 }
+		 
+		 
+  }
+
+</script>
+
+
+<div class="container">
+	
+	<div class="jumbotron">
+	<center>
+	<h1>ADMIN PEMKOT DKI</h1>
+	 
+	
+	<input type="text" id="username" placeholder="USERNAME"/>
+	<input type="password" id="password"  placeholder="PASSWORD"/>	
+	
+	<button type="submit" class="btn btn-primary" onclick="verifikasi();">BUTTON</button>
+	 
+	</center>	
+	</div>
+</div>
+
+<body>
+</body>
+
+</html>
